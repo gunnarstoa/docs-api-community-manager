@@ -53,6 +53,17 @@ The new API version or API Group shows the message *This is only visible for you
 
 If no changes are visible, xref:troubleshooting.adoc#refresh-the-cache[refresh the cache].
 
+== Create Trusted Endpoints in Salesforce
+API Community Manager allows the community to interact with an API from within the API Console.  If your API uses anything other than the mocking service, a trusted endpoint must be created in Salesforce.
+. Open Salesforce Setup (Cogwheel in the top right hand corner)
+. Search and open the "CSP Trusted Sites"
+. Create and Save a new Trusted Site with the fully-qualified endpoint site domain (e.g. http://mynewapi.cloudhub.io)
+
+The endpoint also needs to be listed among "All Remote Sites":
+. Open Salesforce Setup
+. Search and open the "Remote Site Settings"
+. Create and Save a new Remote Site with the fully-qualified endpoint site domain (e.g. http://mynewapi.cloudhub.io)
+
 == Make API Versions Visible
 
 . In the API Community Manager control panel, click *Manage APIs*.
